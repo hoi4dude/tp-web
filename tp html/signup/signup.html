@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="signup_style.css">
+    <title>S'inscrire</title>
+</head>
+<body>
+    <header>
+        <img src="../Crispy-Corp1.png" alt="logo de Crispy Corp">
+        <nav class="nav_principal">
+            <a href="#" class="icone-menu"></a>
+            <ul class="menu">
+                <li><a class="texte" href="../features/features.html">Caractéristique</a></li>
+                <li><a class="texte" href="../entreprise/entreprise.html">Entreprise</a></li>
+                <li><a class="texte" href="../supporttresutile/support.html">Support</a></li>
+                <li><a class="texte" href="../page_prix.html">Prix</a></li>
+                <li><a class="btn_sign_up" href="signup.html">S'inscrire</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="breadcrumb" class="breadcrumb-nav">
+        <ul class="breadcrumb">
+            <li><a href="../accueil/accueil.html">Accueil</a></li>
+            <li>&#62;</li>
+            <li>S'inscrire</li>
+        </ul>
+    </div>
+
+    <form action="../pagePerso/page_perso.html" method="post" enctype="multipart/form-data">
+        <div class="courriel">
+            <label for="courriel">Courriel</label>
+            <input type="email" id="email" class="boite-entre-texte" placeholder="Courriel" required>
+        </div>
+    
+        <div class="groupe-delements">
+            <div class="nom">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" class="boite-entre-texte" placeholder="Nom" required>
+            </div>
+            <div class="prenom">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" class="boite-entre-texte" placeholder="Prénom" required>
+            </div>
+        </div>
+    
+        <div class="groupe-delements">
+            <div>
+                <label for="cv">Joindre votre CV</label>
+                <input type="file" id="cv" class="boite-entre-texte cv" accept=".PDF"required>
+                <small>PDF uniquement</small>
+            </div>
+            <div class="browser">
+                <label for="browser">Quel est votre browswer</label>
+                <select id="browser" class="boite-entre-texte" required>
+                    <option>Edge</option>
+                    <option>Firefox</option>
+                    <option>Chrome</option>
+                    <option>Opera</option>
+                    <option>Safari</option>
+                </select>
+            </div>
+        </div>
+    
+        <div class="newsletter">
+            <label for="newsletter">Recevoir la newsletter</label>
+            <input type="checkbox" id="newsletter" class="switch">
+        </div>
+        <button type="submit" class="btn-envoyer">Envoyer</button>
+    </form>
+
+
+    
+</body>
+</html>

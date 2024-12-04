@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes livres préférés</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="notifications">
+        <div class="erreur_succes" id="erreur_succes"></div>
+    </div>
+
+    <div class="conteneur_droit">
+        <div class="entree">
+            <h1>Mes livres préférés</h1>
+    
+            <div class="div_titre">
+                <label for="titre">Titre: </label>
+                <input type="text" class="titre" id="titre" placeholder="Titre">
+            </div>
+        
+            <div class="div_auteur">
+                <label for="auteur">Auteur: </label>
+                <input type="text" class="auteur" id="auteur" placeholder="Auteur">
+            </div>
+    
+            <div class="div_isbn">
+                <label for="isbn">ISBN: </label>
+                <input type="ISBN" class="isbn" id="isbn" placeholder="ISBN">
+            </div>
+        
+            <button class="ajouter">Ajouter</button>
+    
+            <table class="liste_livre">
+                <thead>
+                    <tr>
+                        <th class="vert">Titre</th>
+                        <th class="rouge">Auteur</th>
+                        <th class="vert">ISBN</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--les livres vont aller là-->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!--sa cause des erreur s'il n'est pas déclaré là-->
+</body>
+</html>

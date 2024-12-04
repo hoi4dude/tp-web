@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    color: rgb(201, 201, 201);
+    background-color: #1b1b1b;
+}
+
+/**notifications à gauche*/
+.notifications{
+    width: 20%;
+    height: 100vh;
+    padding: 10px;
+    background-color: #2b2a2a;
+}
+.erreur_succes{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px ;
+}
+
+/*le reste*/
+.conteneur_droit{
+    width: 80%;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+/*entrées*/
+.entree{
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*couleur de font des zone de texte et bouton*/
+.entree div input, .entree button{
+    background-color: #2b2a2a;
+}
+
+/*forme des zones de texte*/
+.entree div input{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color:rgb(201, 201, 201) ;
+    border: none;
+}
+.entree div label{
+    padding-right: 10px;
+}
+
+/*forme du bouton ajouter*/
+.ajouter{
+    color:  white;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+/*forme des div entournt les zones de texte*/
+.div_titre, .div_auteur, .div_isbn{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    width: 100%;
+}
+
+/*tout ce qui a rapport à la liste des livres*/
+.liste_livre{
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+.liste_livre th{
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+    background-color: #2b2a2a;
+}
+.liste_livre td:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*le bouton supprimer*/
+.btn-supprimer {
+    margin-left: auto;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}

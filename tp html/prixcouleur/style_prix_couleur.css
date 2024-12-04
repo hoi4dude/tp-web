@@ -1,0 +1,258 @@
+
+:root {
+    --noirComplet: #000000;
+    --noirSecondaire: #141414;
+    --noirTertiaire: #222222;
+    --boutonNormal: #ff9900;
+    --boutonHover: #da8300;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--noirTertiaire);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: var(--noirComplet);
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    z-index: 10; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+}
+
+.breadcrumb li {
+    color: white;
+}
+
+.breadcrumb li a {
+    color: var(--boutonNormal);
+    text-decoration: none;
+}
+
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+}
+.block {
+    height: 100px;
+}
+.bleu { background-color: blue; }
+.jaune { background-color: yellow; }
+.vertlong { background-color: green; }
+.vertpetit { background-color: lightgreen; }
+.orange { background-color: orange; }
+.gris { background-color: grey; }
+
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(12, 1fr);
+    }   
+    .bleu {
+        grid-column: span 6;
+        height: 70px;
+    }
+    .jaune {
+        grid-column: span 4;
+    }
+    .vertlong {
+        grid-column: span 8;
+    }
+    .vertpetit {
+        grid-column: span 4;
+    }
+    .orange {
+        grid-column: span 3;
+    }
+    .gris {
+        grid-column: span 12;
+        height: 40px; 
+    }
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .bleu, .jaune, .gris {
+        grid-column: span 1;
+    }
+    .bleu {
+        height: 70px;
+    }
+    .gris {
+        height: 40px;
+    }
+    .vertlong, .vertpetit, .orange {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .icone-menu {
+        display: inline-block;
+    }
+
+    .menu li {
+
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+
+	}
+
+    nav ul {
+        display: none;
+        position: absolute;
+        z-index: 999;
+    }
+
+
+    nav:hover ul {
+        display: block;
+        padding: 20px;
+        background: var(--noirComplet);
+        border: 5px solid #444;
+        right: 20px;
+        top: 60px;
+        width: 50%;
+        border-radius: 4px 0 4px 4px;
+    }
+
+    nav:hover ul li a {
+
+		display: block;
+        font-size: 14px;
+
+	}
+
+    nav:hover .btn_sign_up {
+
+		display: block;
+        font-size: 14px;
+        padding: 2px 2px;
+        
+
+	}
+
+    .breadcrumb-nav {
+        margin-bottom: 0.5rem;
+    }
+
+    .text{
+        display: none;
+        color: white;
+    }
+
+    .btn_sign_up {
+        display: none;
+    }
+
+    .breadcrumb {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.icone-menu{
+    display: hidden;
+    width: 55px;
+    height: 55px;
+    background-image: url("../menuDéroulant.png");
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--noirSecondaire);
+    color: #343a40;
+    text-align: center;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: var(--noirComplet);
+}
+header img{
+    width: 162px;
+    height: 55px;
+    content: url('../Crispy-Corp1.png');
+}
+@media (max-width: 768px) {
+    header img {
+        width: 70px;
+        height: 70px;
+        content: url('../Crispy-Corp2.png');
+    }
+
+    .breadcrumb-nav {
+        padding: 0.3rem;
+        margin-bottom: 0.2rem;
+        z-index: 9;
+    }
+
+    .breadcrumb {
+        padding: 0.3rem;
+        margin-bottom: 0.2rem;
+        z-index: 9;
+    }
+}
+
+
+.nav_principal ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+
+.text {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.text:hover {
+    text-decoration: underline;
+}
+
+.btn_sign_up {
+    text-decoration: none;
+    background-color: var(--boutonNormal);
+    border: none;
+    color: var(--noirComplet);
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.15s;
+}
+
+.btn_sign_up:hover {
+    background-color: var(--boutonHover);
+    cursor: pointer;
+}

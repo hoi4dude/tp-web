@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #controlles {
+    padding: 10px;
+    background-color: #383838;
+    text-align: center;
+  }
+  
+  #controlles button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  #espaceOuLesFormesSont {
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: #474747;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .shape {
+    position: absolute;
+  }
+  
